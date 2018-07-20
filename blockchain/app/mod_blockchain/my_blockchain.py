@@ -1,7 +1,7 @@
 import hashlib
 import json
 import time
-import requests
+from flask import request
 from urllib.parse import urlparse
 from hashlib import sha256
 from textwrap import dedent
@@ -9,7 +9,9 @@ from flask import Flask
 from time import time
 from uuid import uuid4
 from flask import Flask, jsonify, request
-
+from blockchain.app.mod_blockchain import my_blockchain
+from blockchain.app.mod_mysql.mysql_service import Mysql_service
+from blockchain.app import app
 """
 前哈希为计算的前区块的哈希值，区块内不含哈希值，nonce是和前哈希做pow
 
@@ -17,8 +19,9 @@ new_block(self, nonce, previous_hash = None)
 传入：封装随机数、前哈希值(创世区块)
 返回：新区块
 
-new_transaction(self, come, go, ver, seller, buyer, price, amount, app1, app2 = None):
-传入：come两位,go两位，ver两位，seller和buyer都是用户名称
+new_transaction(self, come, go, sale_type, seller_name, buyer_name, price, amount, sales_time,arrive_time):
+传入：come来源地（两位数字）,go目的地（两位数字），sale_type订单类型（一位数字），seller_name和buyer_name都是用户名称
+订单号 = come + go 六位数，区块内订单编号 + sale_type，共11位 
 #返回：区块数+1
 
 hash(block)：计算给定的block的哈希值
@@ -36,16 +39,105 @@ valid_chains(self)：获取整个网络节点的合法链
 返回：有替换返回True反之False
 """
 
+mysql=Mysql_service()
 
 class Blockchain(object):
     def __init__(self):
-        self.chain = []
-        self.nodes = set()
-        self.cur_transactions = []
         # 当前交易总数
         self.num = 0
+        self.chain = []
+        # self.Blockchain.getchain()
+        self.getchain()
+        self.nodes = set()
+        self.get_all_host()
+        self.cur_transactions = []
+        self.get_cur_tran()
         # 创建创世区块
         self.new_block(nonce=self.proof_of_work('1'), previous_hash='1')
+
+    # 获取所有的用户IP
+    def get_all_host(self):
+        address = mysql.get_all_ip()
+
+        for add in address:
+            self.new_node(address=add)
+
+    # 获取区块链(区块（头和体）数组)
+    def getchain(self):
+        len = mysql.get_length()
+        for i in range(len+1):
+            if(i==0):
+                pass
+            else:
+                #  创世区块没有写进入的情况
+                data = mysql.get_block_header(i)
+
+                block = {
+                    'index': data['index'],
+                    'previous_hash': data['previous_hash'],
+                    'timestamp': data['timestamp'],
+                    'transaction': [],
+                    'nonce': data['nonce'],
+                }
+                print(block)
+                data1 = mysql.get_block_body(i)
+                for transaction in data1:
+                    print(transaction)
+                    tran = {
+                        # int订单号
+                        'sales_id': transaction['sales_id'],
+                        # int订单类型
+                        'sales_type':transaction['sales_type'] ,
+                        # 下单时间
+                        'sales_time':transaction['sales_time'] ,
+                        # 卖家姓名
+                        'seller_name':transaction['seller_name'] ,
+                        # double 价格
+                        'price': transaction['price'],
+                        # 买家姓名
+                        'buyer_name': transaction['buyer_name'],
+                        # int交易数量
+                        'amount': transaction['amount'],
+                        # 下单时间
+                        'sales_time': transaction['sales_time'],
+                        # 预期送达时间
+                        'arrive_time': transaction['arrive_time'],
+                    }
+                    block['transaction'].append(tran)
+                print(block)
+                self.chain.append(block)
+
+    def get_cur_tran(self):
+        data_total, data_result = mysql.get_block_tem()
+        for cur_tran in data_result:
+            pre_tran = {
+                # int订单号
+                'sales_id': cur_tran['sales_id'],
+                # int订单类型
+                'sales_type': cur_tran['sales_type'],
+                # 下单时间
+                'sales_time': cur_tran['sales_time'],
+                # 卖家姓名
+                'seller_name': cur_tran['seller_name'],
+                # double 价格
+                'price': cur_tran['price'],
+                # 买家姓名
+                'buyer_name': cur_tran['buyer_name'],
+                # int交易数量
+                'amount': cur_tran['amount'],
+                # 下单时间
+                'sales_time': cur_tran['sales_time'],
+                # 预期送达时间
+                'arrive_time': cur_tran['arrive_time'],
+            }
+            self.cur_transactions = []
+            self.cur_transactions.append(pre_tran)
+
+
+    # 返回最后一个block
+    @property
+    def last_block(self):
+        return self.chain[-1]
 
     def new_block(self, nonce, previous_hash):
         block = {
@@ -55,11 +147,10 @@ class Blockchain(object):
             'previous_hash': previous_hash or self.hash(self.chain[-1]),
             'timestamp': time(),
             # 数组
-            'transactions': self.cur_transactions,
+            'transactions': len(self.cur_transactions),
             # int
             'nonce': nonce,
         }
-
         # 重置当前交易栏
         self.cur_transactions = []
 
@@ -67,24 +158,26 @@ class Blockchain(object):
         return block
 
     """生成新交易，新内容将暂存至cur_transactions"""
-    def new_transaction(self, come, go, ver, seller, buyer, price, amount, app1, app2=None):
+    def new_transaction(self, come, go, sale_type, seller_name, buyer_name, price, amount, sales_time,arrive_time):
         self.cur_transactions.append({
-            # int
-            'index': come + go + "%06d" % self.num + ver,
-            # int
-            'ver': ver,
-            'time': time(),
-            # int
-            'seller': seller,
-            # double
+            # int订单号
+            'sales_id': int(str(come) + str(go) + "%06d" % self.num + str(sale_type)),
+            # int订单类型
+            'sale_type': sale_type,
+            # 下单时间
+            'sales_time': time(),
+            # 卖家姓名
+            'seller_name': seller_name,
+            # double 价格
             'price': price,
-            # int
-            'buyer': buyer,
-            # int
+            # 买家姓名
+            'buyer_name': buyer_name,
+            # int交易数量
             'amount': amount,
-            'app1': app1,
-            # 当是商家和物流时怎么处理？
-            'app2': app2 or 0
+            # 下单时间
+            'sales_time':sales_time,
+            # 预期送达时间
+            'arrive_time': arrive_time,
         })
 
         self.num += 1
@@ -165,10 +258,6 @@ class Blockchain(object):
 
         return False
 
-    """返回最后一个block"""
-    @property
-    def last_block(self):
-        return self.chain[-1]
 
     """总挖矿函数"""
     def mine(self) ->bool:
@@ -188,7 +277,7 @@ class Blockchain(object):
         return True
 
 # 实例化节点
-app = Flask(__name__)
+
 
 # 为这个节点生成一个全局唯一的地址
 node_identifier = str(uuid4()).replace('-', '')
@@ -206,7 +295,7 @@ def mine():
     response = {
         'message': "New Block Forged",
         'index': blockchain.last_block['index'],
-        'transactions': blockchain.last_block['transactions'],
+        'transac tions': blockchain.last_block['transactions'],
         'nonce': blockchain.last_block['nonce'],
         'previous_hash': blockchain.last_block['previous_hash'],
     }
@@ -218,20 +307,21 @@ def new_transaction():
     values = request.get_json()
 
     # 检查所需字段是否在POST'ed数据中
-    required = ['come','go','ver','seller', 'buyer', 'price','amount','app1','app2']
+    required = ['come','go','sale_type','seller_name', 'buyer_name', 'price','amount','sales_time','arrive_time']
     if not all(k in values for k in required):
         return 'Missing values', 400
 
     # 创建一个新交易
-    index = blockchain.new_transaction(values['come'], values['go'], values['ver'],  values['seller'], values['buyer'],
-                                       values['price'], values['amount'], values['app1'], values['app2'],)
+    index = blockchain.new_transaction(values['come'], values['go'], values['sale_type'],  values['seller_name'], values['buyer_name'],
+                                       values['price'], values['amount'],values['sales_time'], values['arrive_time'],)
 
     response = {'message': f'Transaction will be added to Block {index}'}
     return jsonify(response), 201
 
-
-@app.route('/chain', methods=['GET'])  # 创建 /chain 接口, 返回整个区块链。
+# 获去整个区块链的信息
+@app.route('/signin_sailer_index', methods=['GET','POST'])  # 创建 /chain 接口, 返回整个区块链。
 def full_chain():
+    Blockchain.getchain()  # 获得最新区块链
     response = {
         'chain': blockchain.chain,
         'length': len(blockchain.chain),
@@ -275,13 +365,12 @@ def consensus():
     return jsonify(response), 200
 
 
-if __name__ == '__main__':
-    from argparse import ArgumentParser
-
-    parser = ArgumentParser()
-    parser.add_argument('-p', '--port', default=5000, type=int, help='port to listen on')
-    args = parser.parse_args()
-    port = args.port
-
-    app.run(host='127.0.0.1', port=port)  # 服务运行在端口上
-
+# if __name__ == '__main__':
+#     from argparse import ArgumentParser
+#
+#     parser = ArgumentParser()
+#     parser.add_argument('-p', '--port', default=5000, type=int, help='port to listen on')
+#     args = parser.parse_args()
+#     port = args.port
+#
+#     app.run(host='127.0.0.1', port=port)  # 服务运行在端口上
