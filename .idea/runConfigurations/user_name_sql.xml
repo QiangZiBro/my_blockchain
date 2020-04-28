@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="user_name.sql" type="DatabaseScript" editBeforeRun="true" singleton="false" nameIsGenerated="true">
+    <script-file value="$PROJECT_DIR$/MYSQL/user_name.sql" />
+    <script-mode>FILE</script-mode>
+    <data-source id="d17db9c8-3e6f-433b-806b-90a7945f168d" namespace="schema/&quot;mydb&quot;" />
+    <method v="2" />
+  </configuration>
+</component>

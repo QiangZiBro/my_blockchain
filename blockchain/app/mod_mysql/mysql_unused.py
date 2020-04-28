@@ -14,7 +14,6 @@ class Mysql_service(object):
     def register(self, username, password, email, role):  # self,user,email,password,role
         sql = '''insert into all_users (user_name,password,email,role,account,credit,user_port,user_host)\
                values("%s","%s","%s","%s",0.0,100,3036,"0000") ''' % (username, password, email, role)
-        print(sql)
         try:
             self.cursor.execute(sql)
             # 提交到数据库执行
@@ -22,7 +21,6 @@ class Mysql_service(object):
             print('register successful')
         except:
             # 如果发生错误则回滚
-            print('register failed')
             self.db.rollback()
         # 关闭数据库连接
 
@@ -35,58 +33,6 @@ class Mysql_service(object):
     #         self.cursor.execute(sql)
     #     except:
     #         self.db.rollback()
-
-    """获取区块链长度"""
-
-    # def get_length(self):
-    #     cursor = self.db.cursor(cursor=pymysql.cursors.DictCursor)
-    #     sql = 'select count(1) as num from block_tem'
-    #     try:
-    #         # 执行sql语句
-    #         cursor.execute(sql)
-    #         res=cursor.fetchall()
-    #         return res[0]['num']
-    #         # cursor.fetchall()
-    #         # cursor.rowcount
-    #         # 提交到数据库执行
-    #     except:
-    #         # 如果发生错误则回滚
-    #         self.db.rollback()
-    #     return cursor.rowcount
-
-    def get_length(self):
-        cursor = self.db.cursor(cursor=pymysql.cursors.DictCursor)
-        sql = '''select * from block_header'''
-        try:
-            # 执行sql语句
-            cursor.execute(sql)
-            # 提交到数据库执行
-        except:
-            # 如果发生错误则回滚
-            self.db.rollback()
-        return cursor.rowcount
-
-    """获得节点中的所有IP"""
-
-    def get_all_ip(self):
-        address = []
-        cursor = self.db.cursor(cursor=pymysql.cursors.DictCursor)
-        sql = '''select user_host,user_port from all_users'''
-        try:
-            # 执行sql语句
-            cursor.execute(sql)
-            data = cursor.fetchall()
-            # cursor.rowcount
-            # 提交到数据库执行
-        except:
-            # 如果发生错误则回滚
-            self.db.rollback()
-
-        for record in data:
-            string = "%s" % record['user_host'] + ":" + "%s" % record['user_port']
-            address.append(string)
-
-        return address
 
     def getUserInfoByUsername(self, username):
         sql = "select * from all_users where user_name='%s'" % (username)
@@ -338,7 +284,7 @@ class Mysql_service(object):
 
         sql2 = '''update all_users set password="%s",address="%s",account=%lf,email="%s", user_port=%d, user_host="%s"\
                         where user_name="%s" ''' % (
-            self.password, self.address, self.account, self.email, self.user_port, self.user_host, username)
+        self.password, self.address, self.account, self.email, self.user_port, self.user_host, username)
 
         # cursor2 = self.db.cursor(cursor=pymysql.cursors.DictCursor)
         # cursor1.scroll(0,mode='absolute')
@@ -454,69 +400,3 @@ class Mysql_service(object):
             # 如果发生错误则回滚
             print("insert failed")
             self.db.rollback()
-
-    def get_block_tem(self):
-        ####查找所有临时交易
-        data_result = []
-        data_total = 0
-        # 存放结果的字典数组与数量
-        cursor = self.db.cursor(cursor=pymysql.cursors.DictCursor)
-
-        sql = '''select * from block_tem '''
-        try:
-            # 执行sql语句
-            cursor.execute(sql)
-            data = cursor.fetchall()
-
-            # cursor.rowcount
-            # 提交到数据库执行
-
-            for row in data:
-                data_result.append(row)
-                data_total = data_total + 1
-                # self.db.commit()
-        except:
-            # 如果发生错误则回滚
-            self.db.rollback()
-
-        return data_total, data_result
-
-    def get_block_header(self, index: int):
-        """返回指定区块头的内容"""
-        cursor = self.db.cursor(cursor=pymysql.cursors.DictCursor)
-        sql = '''SELECT * from block_header limit %d,1''' % (index - 1)
-        # data=[]
-        try:
-            # 执行sql语句
-            cursor.execute(sql)
-            print("success")
-            data = cursor.fetchone()
-            # data.append(data1)
-            # cursor.rowcount
-            # 提交到数据库执行
-            return data
-        except:
-            print("failed")
-            # 如果发生错误则回滚
-            self.db.rollback()
-            return None
-
-    def get_block_body(self, index: int):
-        """返回指定区块体的内容"""
-        cursor = self.db.cursor(cursor=pymysql.cursors.DictCursor)
-        block_body = "block_body" + '%d' % index
-        sql = '''select * from %s''' % block_body
-
-        try:
-            # 执行sql语句
-            cursor.execute(sql)
-            print("success get body")
-            data = cursor.fetchall()
-            # cursor.rowcount
-            # 提交到数据库执行
-        except:
-
-            # 如果发生错误则回滚
-            self.db.rollback()
-
-        return data

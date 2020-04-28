@@ -27,9 +27,9 @@ def login():
         password = request.form['password']
         role = request.form['role']
         mysql = Mysql_service()
+
         name, real_pass, role, email, address, account, credit=mysql.getUserInfoByUsername(username)
         if password == real_pass:
-            print(role)
             if role == 'Product':
                 session['username'] = name
                 return render_template('signin_sailer_index.html',username=name,email=email,address=address)
