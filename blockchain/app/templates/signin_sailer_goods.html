@@ -232,7 +232,7 @@
                                    <table class="table table-bordered">
                                        <thead>
                                        <tr>
-                                           <th>USER ID</th>
+                                           <th>USER NAME</th>
                                            <th>GOODS NAME</th>
                                            <th>GOODS NUMBER</th>
                                        </tr>
@@ -258,12 +258,21 @@
                 <a>
                     <h1>SUBMIT YOUR GOODS</h1>
                 </a>
-                <form action="/">
+                <form action="/sigin_sailer_goods_result" method="POST">                    <!--货物名称-->
+                    <div class="vali-form">
+                        <div class="col-md-6 form-group1 form-last">
+                            <label class="control-label">RECEIVER NAME</label>
+                            <input type="text" name="receiver" id="receiver"  placeholder="RECEIVER" required="">
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <!--货物名称-->
+
                     <!--货物名称-->
                     <div class="vali-form">
                         <div class="col-md-6 form-group1 form-last">
-                            <label class="control-label">GOODS NAME</label>
-                            <input type="text" placeholder="GOODS NAME" required="">
+                            <label class="control-label">GOODS Name</label>
+                            <input type="text" name="goodname" id="goodname" placeholder="GOODS NAME" required="">
                         </div>
                     </div>
                     <div class="clearfix"></div>
@@ -272,7 +281,7 @@
                     <!--货物数量-->
                     <div class="col-md-12 form-group1 group-mail">
                         <label class="control-label">NUMBER</label>
-                        <input type="text" placeholder="NUMBER OF GOODS" required="">
+                        <input type="text" name="goodnumber" id="goodnumber" placeholder="NUMBER OF GOODS" required="">
                         <p class=" hint-block">Numeric values should be larger than 0</p>
                     </div>
                     <div class="clearfix"> </div>
@@ -281,7 +290,7 @@
                     <!--货物价格-->
                     <div class="col-md-12 form-group1 group-mail">
                         <label class="control-label">PRICES</label>
-                        <input type="text" placeholder="PRICES OF GOODS" required="">
+                        <input type="text" name="price" id="price" placeholder="PRICES OF GOODS" required="">
                         <p class=" hint-block">Numeric values should be larger than 0</p>
                     </div>
                     <div class="clearfix"> </div>

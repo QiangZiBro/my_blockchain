@@ -9,10 +9,10 @@ from flask import Flask
 from time import time
 from uuid import uuid4
 from flask import Flask, jsonify, request
-from blockchain.app.mod_blockchain import my_blockchain
-from blockchain.app.mod_mysql.mysql_service import Mysql_service
+# from blockchain.app.mod_mysql.mysql_service import Mysql_service
 from blockchain.app import app
 
+# app=Flask(__name__)
 """
 前哈希为计算的前区块的哈希值，区块内不含哈希值，nonce是和前哈希做pow
 
@@ -40,7 +40,7 @@ valid_chains(self)：获取整个网络节点的合法链
 返回：有替换返回True反之False
 """
 
-mysql = Mysql_service()
+mysql = None#Mysql_service()
 
 
 class Blockchain(object):
@@ -51,11 +51,11 @@ class Blockchain(object):
         # self.Blockchain.getchain()
         self.getchain()
         self.nodes = set()
-        self.get_all_host()
+        # self.get_all_host()
         self.cur_transactions = []
-        self.get_cur_tran()
+        # self.get_cur_tran()
         # 创建创世区块
-        self.new_block(nonce=self.proof_of_work('1'), previous_hash='1')
+        self.new_block(previous_hash='1')
 
     # 获取所有的用户IP
     def get_all_host(self):
@@ -66,13 +66,15 @@ class Blockchain(object):
 
     # 获取区块链(区块（头和体）数组)
     def getchain(self):
-        len = mysql.get_length()
+        # len = mysql.get_length()
+        len=0
         for i in range(len + 1):
             if (i == 0):
                 pass
             else:
-                #  创世区块没有写进入的情况
-                data = mysql.get_block_header(i)
+                #  创世区块没有写进入的情况 这里是区块头
+                # data = mysql.get_block_header(i)
+                data=None
 
                 block = {
                     'index': data['index'],
@@ -81,8 +83,9 @@ class Blockchain(object):
                     'transaction': [],
                     'nonce': data['nonce'],
                 }
-                print(block)
-                data1 = mysql.get_block_body(i)
+
+                # data1 = mysql.get_block_body(i)
+                data1 = None
                 for transaction in data1:
                     print(transaction)
                     tran = {
@@ -110,7 +113,7 @@ class Blockchain(object):
                 self.chain.append(block)
 
     def get_cur_tran(self):
-        data_total, data_result = mysql.get_block_tem()
+        data_total, data_result = None, None#mysql.get_block_tem()
         for cur_tran in data_result:
             pre_tran = {
                 # int订单号
@@ -140,7 +143,7 @@ class Blockchain(object):
     def last_block(self):
         return self.chain[-1]
 
-    def new_block(self, nonce, previous_hash):
+    def new_block(self, previous_hash=None):
         block = {
             # int
             'index': len(self.chain) + 1,
@@ -148,9 +151,7 @@ class Blockchain(object):
             'previous_hash': previous_hash or self.hash(self.chain[-1]),
             'timestamp': time(),
             # 数组
-            'transactions': len(self.cur_transactions),
-            # int
-            'nonce': nonce,
+            'transactions': self.cur_transactions,
         }
         # 重置当前交易栏
         self.cur_transactions = []
@@ -160,29 +161,33 @@ class Blockchain(object):
 
     """生成新交易，新内容将暂存至cur_transactions"""
 
-    def new_transaction(self, come, go, sale_type, seller_name, buyer_name, price, amount, sales_time, arrive_time):
+    def new_transaction(self, **kargs):
+
         self.cur_transactions.append({
-            # int订单号
-            'sales_id': int(str(come) + str(go) + "%06d" % self.num + str(sale_type)),
-            # int订单类型
-            'sale_type': sale_type,
+            # # int订单号
+            # 'sales_id': int(str(come) + str(go) + "%06d" % self.num + str(sale_type)),
+            # # int订单类型
+            # 'sale_type': sale_type,
             # 下单时间
             'sales_time': time(),
             # 卖家姓名
-            'seller_name': seller_name,
+            'seller_name': kargs['seller_name'],
             # double 价格
-            'price': price,
+            'price': kargs['price'],
             # 买家姓名
-            'buyer_name': buyer_name,
+            'buyer_name': kargs['receiver'],
             # int交易数量
-            'amount': amount,
-            # 下单时间
-            'sales_time': sales_time,
-            # 预期送达时间
-            'arrive_time': arrive_time,
+            'amount': kargs['number'],
+            # 货物名称
+            'goods_name': kargs['goods_name']
+            # # 预期送达时间
+            # 'arrive_time': arrive_time,
         })
 
         self.num += 1
+        if len(self.cur_transactions) == 3:
+            block = self.new_block()
+            print("add new block",block)
 
         return self.last_block['index'] + 1
 
@@ -295,7 +300,7 @@ blockchain = Blockchain()
 
 
 @app.route('/mine', methods=['GET'])
-def mine():
+def mine1():
     # We run the proof of work algorithm to get the next proof...
     statue = blockchain.mine()
     if not statue:
@@ -374,12 +379,16 @@ def consensus():
 
     return jsonify(response), 200
 
-# if __name__ == '__main__':
-#     from argparse import ArgumentParser
-#
-#     parser = ArgumentParser()
-#     parser.add_argument('-p', '--port', default=5000, type=int, help='port to listen on')
-#     args = parser.parse_args()
-#     port = args.port
-#
-#     app.run(host='127.0.0.1', port=port)  # 服务运行在端口上
+if __name__ == '__main__':
+    index = blockchain.new_transaction(1, 2, 1, 'seller_name',
+                                       'buyer_name',
+                                       'price', 'amount', 'sales_time', 'arrive_time' )
+    index1 = blockchain.new_transaction(11, 22, 1, 'seller_name',
+                                       'buyer_name',
+                                       'price', 'amount', 'sales_time', 'arrive_time' )
+    index2 = blockchain.new_transaction(121, 22, 1, 'seller_name',
+                                        'buyer_name',
+                                        'price', 'amount', 'sales_time', 'arrive_time' )
+    print(blockchain.chain)
+
+    app.run(host='127.0.0.1', port=5002)

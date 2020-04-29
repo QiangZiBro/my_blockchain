@@ -9,6 +9,8 @@ app.config['PERMANENT_SESSION_LIFETIME']=timedelta(days=7)
 def hello_world():
     return render_template('index.html')
 
+
 from app.mod_user.UserController import *
-from app.mod_qrcode.QrcodeController import *
+# from app.mod_qrcode.QrcodeController import *
 from app.mod_goods.GoodsController import *
+from app.mod_blockchain.BlockController import *
