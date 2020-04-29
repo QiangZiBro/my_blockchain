@@ -268,14 +268,47 @@
             <div class="validation-form">
                 <!--{{ name.chain }}-->
 
-                {% for item in name.chain %}
+
+							<!--<li>{{ k }} &#45;&#45; {{ v }}</li>-->
+							<div class="card">
+                    <div class="card-body">
+                        <div class="widget widget-report-table">
+                            <!--表头-->
+                            <header class="widget-header m-b-15"></header>
+                            <!--表格内容-->
+                            <div class="widget-body p-15">
+                                   <table class="table table-bordered">
+                                       <thead>
+                                       <tr>
+                                           <th>sales_time</th>
+                                           <th>seller_name</th>
+										   <th>price</th>
+                                           <th>buyer_name</th>
+										   <th>amount</th>
+                                           <th>goods_name</th>
+                                       </tr>
+                                       </thead>
+									   {% for item in name.chain %}
 					{% for item2 in item.transactions %}
+									   <tbody>
+                                       <tr>
 						{% for k, v in item2.items() %}
-							<li>{{ k }} -- {{ v }}</li>
-						{% endfor %}
+
+                                           <!--<td>{{ k }}</td>-->
+                                           <td>{{ v }}</td>
+
+									   {% endfor %}
+										   </tr>
 						<br>
 					{% endfor %}
                 {% endfor %}
+                                       </tbody>
+                                   </table>
+                               </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
             <script>

@@ -3,19 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="97957575-213c-4fdf-924f-0fa4eef35cf9" name="Default" comment="渲染了模板">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blockchain/app/templates/signin_custs_goods.html" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/app/templates/signin_custs_goods.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blockchain/app/templates/signin_custs_index.html" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/app/templates/signin_custs_index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blockchain/app/templates/signin_custs_system.html" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/app/templates/signin_custs_system.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blockchain/app/templates/signin_custs_trans.html" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/app/templates/signin_custs_trans.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blockchain/app/templates/signin_sailer_goods.html" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/app/templates/signin_sailer_goods.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blockchain/app/templates/signin_sailer_sails.html" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/app/templates/signin_sailer_sails.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blockchain/app/templates/signin_sailer_system.html" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/app/templates/signin_sailer_system.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blockchain/app/templates/signin_sailer_trans.html" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/app/templates/signin_sailer_trans.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blockchain/app/templates/signin_trans_goods.html" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/app/templates/signin_trans_goods.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blockchain/app/templates/signin_trans_index.html" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/app/templates/signin_trans_index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blockchain/app/templates/signin_trans_sails.html" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/app/templates/signin_trans_sails.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blockchain/app/templates/signin_trans_system.html" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/app/templates/signin_trans_system.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blockchain/app/templates/signin_trans_trans.html" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/app/templates/signin_trans_trans.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blockchain/app/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/app/templates/home.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,7 +15,29 @@
     <SUITE FILE_PATH="coverage/my_blockchain$Flask__blockchain_app_mod_blockchain_my_blockchain_py_.coverage" NAME="Flask (blockchain/app/mod_blockchain/my_blockchain.py) Coverage Results" MODIFIED="1588133333319" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/blockchain/app/templates/home.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="258">
+              <caret line="298" column="39" lean-forward="true" selection-start-line="298" selection-start-column="39" selection-end-line="298" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/blockchain/app/templates/signin_custs_trans.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="66">
+              <caret line="219" column="16" lean-forward="true" selection-start-line="219" selection-start-column="16" selection-end-line="253" selection-end-column="22" />
+              <folding>
+                <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -54,7 +64,6 @@
         <option value="$PROJECT_DIR$/blockchain/app/mod_blockchain/my_blockchain.py" />
         <option value="$PROJECT_DIR$/blockchain/app/templates/signin_sailer_index.html" />
         <option value="$PROJECT_DIR$/blockchain/app/mod_blockchain/BlockController.py" />
-        <option value="$PROJECT_DIR$/blockchain/app/templates/home.html" />
         <option value="$PROJECT_DIR$/blockchain/app/templates/signin_custs_sails.html" />
         <option value="$PROJECT_DIR$/blockchain/app/templates/signin_custs_goods.html" />
         <option value="$PROJECT_DIR$/blockchain/app/templates/signin_custs_index.html" />
@@ -69,6 +78,7 @@
         <option value="$PROJECT_DIR$/blockchain/app/templates/signin_trans_sails.html" />
         <option value="$PROJECT_DIR$/blockchain/app/templates/signin_trans_system.html" />
         <option value="$PROJECT_DIR$/blockchain/app/templates/signin_trans_trans.html" />
+        <option value="$PROJECT_DIR$/blockchain/app/templates/home.html" />
       </list>
     </option>
   </component>
@@ -245,7 +255,7 @@
       <updated>1532002705353</updated>
       <workItem from="1587805487468" duration="8353000" />
       <workItem from="1588086395484" duration="12837000" />
-      <workItem from="1588133233049" duration="4509000" />
+      <workItem from="1588133233049" duration="8120000" />
     </task>
     <task id="LOCAL-00001" summary="渲染了模板">
       <created>1588137303950</created>
@@ -261,14 +271,29 @@
       <option name="project" value="LOCAL" />
       <updated>1588137522314</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="渲染了模板">
+      <created>1588137761121</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1588137761121</updated>
+    </task>
+    <task id="LOCAL-00004" summary="渲染了模板">
+      <created>1588138750039</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1588138750039</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4509000" />
+    <option name="totallyTimeSpent" value="8120000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24962178" />
@@ -442,13 +467,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blockchain/app/templates/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="274" column="18" lean-forward="true" selection-start-line="274" selection-start-column="18" selection-end-line="274" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blockchain/app/mod_blockchain/BlockController.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -503,13 +521,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/blockchain/app/templates/signin_custs_system.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="27" column="66" selection-start-line="27" selection-start-column="66" selection-end-line="27" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blockchain/app/templates/signin_custs_trans.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="122">
           <caret line="27" column="66" selection-start-line="27" selection-start-column="66" selection-end-line="27" selection-end-column="66" />
@@ -583,6 +594,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="122">
           <caret line="26" column="66" selection-start-line="26" selection-start-column="66" selection-end-line="26" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blockchain/app/templates/signin_custs_trans.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="219" column="16" lean-forward="true" selection-start-line="219" selection-start-column="16" selection-end-line="253" selection-end-column="22" />
+          <folding>
+            <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blockchain/app/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="298" column="39" lean-forward="true" selection-start-line="298" selection-start-column="39" selection-end-line="298" selection-end-column="39" />
         </state>
       </provider>
     </entry>
