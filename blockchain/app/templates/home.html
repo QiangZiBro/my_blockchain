@@ -267,10 +267,14 @@
             <!--</div>-->
             <div class="validation-form">
                 <!--{{ name.chain }}-->
-                {{ name }}
 
-                {% for item in name.chain.transactions %}
-                    <label>transactions: {{ item }}</label>
+                {% for item in name.chain %}
+					{% for item2 in item.transactions %}
+						{% for k, v in item2.items() %}
+							<li>{{ k }} -- {{ v }}</li>
+						{% endfor %}
+						<br>
+					{% endfor %}
                 {% endfor %}
             </div>
 
