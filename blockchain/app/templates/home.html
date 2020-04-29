@@ -266,9 +266,12 @@
                 <!--</form>-->
             <!--</div>-->
             <div class="validation-form">
-                <!--{{ name.chain }}-->
+                {{ name.chain }}
 
-
+{% for item in name.chain %}
+				<h1>区块号：{{ item.index}}</h1>
+				<h2>哈希值：{{ item.previous_hash }}</h2>
+				<h3>时间戳： {{ item.timestamp }}</h3>
 							<!--<li>{{ k }} &#45;&#45; {{ v }}</li>-->
 							<div class="card">
                     <div class="card-body">
@@ -288,11 +291,11 @@
                                            <th>goods_name</th>
                                        </tr>
                                        </thead>
-									   {% for item in name.chain %}
-					{% for item2 in item.transactions %}
+
+									   {% for item2 in item.transactions %}
 									   <tbody>
                                        <tr>
-						{% for k, v in item2.items() %}
+										{% for k, v in item2.items() %}
 
                                            <!--<td>{{ k }}</td>-->
                                            <td>{{ v }}</td>
@@ -301,13 +304,14 @@
 										   </tr>
 						<br>
 					{% endfor %}
-                {% endfor %}
+
                                        </tbody>
                                    </table>
                                </div>
                         </div>
                     </div>
                 </div>
+				{% endfor %}
 
             </div>
 
