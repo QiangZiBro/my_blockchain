@@ -298,6 +298,7 @@ node_identifier = str(uuid4()).replace('-', '')
 # 实例化区块链类
 blockchain = Blockchain()
 
+'''
 
 @app.route('/mine', methods=['GET'])
 def mine1():
@@ -392,3 +393,4 @@ if __name__ == '__main__':
     print(blockchain.chain)
 
     app.run(host='127.0.0.1', port=5002)
+'''

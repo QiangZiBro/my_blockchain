@@ -210,62 +210,69 @@
 				</div>
             <!--header end here-->
             <br/>
+            <!--<div class="validation-form">-->
+                <!--<a>-->
+                    <!--<h1>PERFECT YOUR INFORMATION</h1>-->
+                <!--</a>-->
+
+                <!--<form>-->
+                    <!--&lt;!&ndash;货物名称&ndash;&gt;-->
+                    <!--<div class="vali-form">-->
+                        <!--<div class="col-md-6 form-group1 form-last">-->
+                            <!--<label class="control-label">ID NAME</label>-->
+                            <!--<input type="text" placeholder="123456" required="">-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="clearfix"></div>-->
+                    <!--&lt;!&ndash;货物名称&ndash;&gt;-->
+
+                    <!--&lt;!&ndash;货物数量&ndash;&gt;-->
+                    <!--<div class="col-md-12 form-group1 group-mail">-->
+                        <!--<label class="control-label">USER NAME</label>-->
+                        <!--<input type="text" placeholder="David Smith" required="">-->
+                    <!--</div>-->
+                    <!--<div class="clearfix"></div>-->
+                    <!--&lt;!&ndash;货物数量&ndash;&gt;-->
+
+                    <!--&lt;!&ndash;货物价格&ndash;&gt;-->
+                    <!--<div class="col-md-12 form-group1 group-mail">-->
+                        <!--<label class="control-label">ADDRESS</label>-->
+                        <!--<input type="text" placeholder="address" required="">-->
+                    <!--</div>-->
+                    <!--<div class="clearfix"></div>-->
+                    <!--&lt;!&ndash;货物价格&ndash;&gt;-->
+
+                    <!--&lt;!&ndash;货物价格&ndash;&gt;-->
+                    <!--<div class="col-md-12 form-group1 group-mail">-->
+                        <!--<label class="control-label">CREDITS</label>-->
+                        <!--<input type="text" placeholder="100" required="">-->
+                    <!--</div>-->
+                    <!--<div class="clearfix"></div>-->
+                    <!--&lt;!&ndash;货物价格&ndash;&gt;-->
+
+                    <!--&lt;!&ndash;货物价格&ndash;&gt;-->
+                    <!--<div class="col-md-12 form-group1 group-mail">-->
+                        <!--<label class="control-label">ACCOUNT</label>-->
+                        <!--<input type="text" placeholder="$10,000,000,000" required="">-->
+                    <!--</div>-->
+                    <!--<div class="clearfix"> </div>-->
+                    <!--&lt;!&ndash;货物价格&ndash;&gt;-->
+
+                    <!--<div class="col-md-12 form-group">-->
+                        <!--<button type="submit" class="btn btn-primary">Submit</button>-->
+                        <!--<button type="reset" class="btn btn-default">Reset</button>-->
+                    <!--</div>-->
+                    <!--<div class="clearfix"></div>-->
+                <!--</form>-->
+            <!--</div>-->
             <div class="validation-form">
-                <a>
-                    <h1>PERFECT YOUR INFORMATION</h1>
-                </a>
+                <!--{{ name.chain }}-->
+                {{ name }}
 
-                <form>
-                    <!--货物名称-->
-                    <div class="vali-form">
-                        <div class="col-md-6 form-group1 form-last">
-                            <label class="control-label">ID NAME</label>
-                            <input type="text" placeholder="123456" required="">
-                        </div>
-                    </div>
-                    <div class="clearfix"></div>
-                    <!--货物名称-->
-
-                    <!--货物数量-->
-                    <div class="col-md-12 form-group1 group-mail">
-                        <label class="control-label">USER NAME</label>
-                        <input type="text" placeholder="David Smith" required="">
-                    </div>
-                    <div class="clearfix"></div>
-                    <!--货物数量-->
-
-                    <!--货物价格-->
-                    <div class="col-md-12 form-group1 group-mail">
-                        <label class="control-label">ADDRESS</label>
-                        <input type="text" placeholder="address" required="">
-                    </div>
-                    <div class="clearfix"></div>
-                    <!--货物价格-->
-
-                    <!--货物价格-->
-                    <div class="col-md-12 form-group1 group-mail">
-                        <label class="control-label">CREDITS</label>
-                        <input type="text" placeholder="100" required="">
-                    </div>
-                    <div class="clearfix"></div>
-                    <!--货物价格-->
-
-                    <!--货物价格-->
-                    <div class="col-md-12 form-group1 group-mail">
-                        <label class="control-label">ACCOUNT</label>
-                        <input type="text" placeholder="$10,000,000,000" required="">
-                    </div>
-                    <div class="clearfix"> </div>
-                    <!--货物价格-->
-
-                    <div class="col-md-12 form-group">
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                        <button type="reset" class="btn btn-default">Reset</button>
-                    </div>
-                    <div class="clearfix"></div>
-                </form>
+                {% for item in name.chain.transactions %}
+                    <label>transactions: {{ item }}</label>
+                {% endfor %}
             </div>
-
 
             <script>
 		        $(document).ready(function() {
