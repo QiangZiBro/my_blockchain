@@ -270,7 +270,8 @@
 
 {% for item in name.chain %}
 				<h1>区块号：{{ item.index}}</h1>
-				<h2>哈希值：{{ item.previous_hash }}</h2>
+				<h2>上一块哈希值：{{ item.previous_hash }}</h2>
+				<h2>当前哈希值：{{ item.current_hash }}</h2>
 				<h3>时间戳： {{ item.timestamp }}</h3>
 							<!--<li>{{ k }} &#45;&#45; {{ v }}</li>-->
 							<div class="card">

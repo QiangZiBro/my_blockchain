@@ -148,11 +148,15 @@ class Blockchain(object):
             # int
             'index': len(self.chain) + 1,
             # str
-            'previous_hash': previous_hash or self.hash(self.chain[-1]),
+            'previous_hash': previous_hash or self.chain[-1]['current_hash'],
             'timestamp': time(),
             # 数组
             'transactions': self.cur_transactions,
+            'current_hash' : ""
         }
+        tblock = block.copy()
+        tblock.pop("current_hash")
+        block['current_hash'] = self.hash(tblock)
         # 重置当前交易栏
         self.cur_transactions = []
 
@@ -185,7 +189,7 @@ class Blockchain(object):
         })
 
         self.num += 1
-        if len(self.cur_transactions) == 3:
+        if len(self.cur_transactions) == 2:
             block = self.new_block()
             print("add new block",block)
 

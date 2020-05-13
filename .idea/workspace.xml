@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97957575-213c-4fdf-924f-0fa4eef35cf9" name="Default" comment="添加了表格形式">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MYSQL/all_goods.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MYSQL/block_body.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MYSQL/block_header.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blockchain/app/mod_blockchain/my_blockchain.py" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/app/mod_blockchain/my_blockchain.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blockchain/app/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/app/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blockchain/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/config.py" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,31 +18,6 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/my_blockchain$Flask__blockchain_app_mod_blockchain_my_blockchain_py_.coverage" NAME="Flask (blockchain/app/mod_blockchain/my_blockchain.py) Coverage Results" MODIFIED="1588133333319" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/blockchain/app/templates/home.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="273" column="50" lean-forward="true" selection-start-line="273" selection-start-column="50" selection-end-line="273" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blockchain/app/templates/signin_custs_trans.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="130" column="48" lean-forward="true" selection-start-line="130" selection-start-column="48" selection-end-line="130" selection-end-column="48" />
-              <folding>
-                <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -46,87 +27,13 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>vali</find>
-      <find>home.html</find>
-      <find>/signin_sailer_index/getChain</find>
-      <find>block</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/blockchain/app/mod_blockchain/my_blockchain.py" />
-        <option value="$PROJECT_DIR$/blockchain/app/templates/signin_sailer_index.html" />
-        <option value="$PROJECT_DIR$/blockchain/app/mod_blockchain/BlockController.py" />
-        <option value="$PROJECT_DIR$/blockchain/app/templates/signin_custs_sails.html" />
-        <option value="$PROJECT_DIR$/blockchain/app/templates/signin_custs_goods.html" />
-        <option value="$PROJECT_DIR$/blockchain/app/templates/signin_custs_index.html" />
-        <option value="$PROJECT_DIR$/blockchain/app/templates/signin_custs_system.html" />
-        <option value="$PROJECT_DIR$/blockchain/app/templates/signin_custs_trans.html" />
-        <option value="$PROJECT_DIR$/blockchain/app/templates/signin_sailer_goods.html" />
-        <option value="$PROJECT_DIR$/blockchain/app/templates/signin_sailer_sails.html" />
-        <option value="$PROJECT_DIR$/blockchain/app/templates/signin_sailer_system.html" />
-        <option value="$PROJECT_DIR$/blockchain/app/templates/signin_sailer_trans.html" />
-        <option value="$PROJECT_DIR$/blockchain/app/templates/signin_trans_goods.html" />
-        <option value="$PROJECT_DIR$/blockchain/app/templates/signin_trans_index.html" />
-        <option value="$PROJECT_DIR$/blockchain/app/templates/signin_trans_sails.html" />
-        <option value="$PROJECT_DIR$/blockchain/app/templates/signin_trans_system.html" />
-        <option value="$PROJECT_DIR$/blockchain/app/templates/signin_trans_trans.html" />
-        <option value="$PROJECT_DIR$/blockchain/app/templates/home.html" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="4" />
-    <option name="y" value="5" />
-    <option name="width" value="1346" />
-    <option name="height" value="688" />
-  </component>
+  <component name="JupyterTrust" id="ee71bcc3-b776-4975-9e1c-d8b3deac07c1" />
   <component name="ProjectId" id="1b1hO4tFPu3pEkT9QtyDKThX5n4" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="my_blockchain" type="b2602c69:ProjectViewProjectNode" />
-              <item name="my_blockchain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="my_blockchain" type="b2602c69:ProjectViewProjectNode" />
-              <item name="my_blockchain" type="462c0819:PsiDirectoryNode" />
-              <item name="blockchain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="my_blockchain" type="b2602c69:ProjectViewProjectNode" />
-              <item name="my_blockchain" type="462c0819:PsiDirectoryNode" />
-              <item name="blockchain" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="my_blockchain" type="b2602c69:ProjectViewProjectNode" />
-              <item name="my_blockchain" type="462c0819:PsiDirectoryNode" />
-              <item name="blockchain" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -135,93 +42,23 @@
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.tabs" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Flask server.Flask (blockchain/app/mod_blockchain/my_blockchain.py)">
-    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="blockchain" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/blockchain" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/blockchain/app.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="my_blockchain" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="blockchain" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/blockchain/app/mod_blockchain" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/blockchain/app/mod_blockchain/my_blockchain.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Flask (app.py)" type="Python.FlaskServer" factoryName="Flask server" nameIsGenerated="true">
+  <component name="RunManager" selected="Flask server.Flask">
+    <configuration name="Flask" type="Python.FlaskServer" nameIsGenerated="true">
       <option name="flaskDebug" value="true" />
       <module name="blockchain" />
       <option name="target" value="$PROJECT_DIR$/blockchain/app.py" />
       <option name="targetType" value="PATH" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="$PROJECT_DIR$/../anaconda3/envs/flask/bin/python" />
+      <option name="SDK_HOME" value="$USER_HOME$/anaconda3/envs/blockchain_flask/bin/python3" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/blockchain" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="launchJavascriptDebuger" value="false" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Flask (blockchain/app/mod_blockchain/my_blockchain.py)" type="Python.FlaskServer" factoryName="Flask server" nameIsGenerated="true">
-      <option name="flaskDebug" value="true" />
-      <module name="blockchain" />
-      <option name="target" value="$PROJECT_DIR$/blockchain/app/mod_blockchain/my_blockchain.py" />
-      <option name="targetType" value="PATH" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="C:\ProgramData\Anaconda3\envs\env_test\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -230,17 +67,9 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Flask server.Flask (blockchain/app/mod_blockchain/my_blockchain.py)" />
-      <item itemvalue="Flask server.Flask (app.py)" />
-      <item itemvalue="Python.app" />
-      <item itemvalue="Python.my_blockchain" />
+      <item itemvalue="Database Script.user_name.sql" />
+      <item itemvalue="Flask server.Flask" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Python.my_blockchain" />
-        <item itemvalue="Python.app" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -255,6 +84,9 @@
       <workItem from="1587805487468" duration="8353000" />
       <workItem from="1588086395484" duration="12837000" />
       <workItem from="1588133233049" duration="9409000" />
+      <workItem from="1588157097262" duration="4333000" />
+      <workItem from="1588225675655" duration="1118000" />
+      <workItem from="1588391844669" duration="467000" />
     </task>
     <task id="LOCAL-00001" summary="渲染了模板">
       <created>1588137303950</created>
@@ -294,38 +126,8 @@
     <option name="localTasksCounter" value="6" />
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9409000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24962178" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2672131" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="SciView" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="渲染了模板" />
@@ -337,11 +139,11 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="0" y="212" key="#SQL_Dialects/0.0.1440.900@0.0.1440.900" timestamp="1587808395354" />
-    <state x="148" y="186" width="996" height="1711" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588128973480">
-      <screen x="0" y="0" width="1200" height="1920" />
+    <state x="177" y="87" width="996" height="1711" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588391896339">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="148" y="186" width="996" height="1711" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1440.1020.1440.900/0.0.1200.1920@0.0.1200.1920" timestamp="1588128973480" />
-    <state x="177" y="87" width="1086" height="802" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1587808069908" />
+    <state x="148" y="186" width="996" height="1711" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1440.1020.1440.900/0.0.1200.1920@0.0.1200.1920" timestamp="1588157111426" />
+    <state x="177" y="87" width="1086" height="802" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1588391896339" />
     <state x="308" y="225" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587808357186">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -350,9 +152,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="439" y="39" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1587811433073" />
-    <state x="299" y="0" key="#user_name.sql" timestamp="1587809194381">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="249" y="0" key="#user_name.sql" timestamp="1588225788844">
+      <screen x="0" y="0" width="1200" height="1920" />
     </state>
+    <state x="249" y="0" key="#user_name.sql/-1440.1020.1440.900/0.0.1200.1920@0.0.1200.1920" timestamp="1588225788844" />
     <state x="299" y="0" key="#user_name.sql/0.0.1440.900@0.0.1440.900" timestamp="1587809194381" />
     <state x="520" y="110" key="EnvironmentVariablesDialog" timestamp="1587805937576">
       <screen x="0" y="0" width="1440" height="900" />
@@ -362,46 +165,50 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="401" y="98" key="FileChooserDialogImpl/0.0.1440.900@0.0.1440.900" timestamp="1587805797692" />
-    <state width="1138" height="509" key="GridCell.Tab.0.bottom" timestamp="1588132595404">
+    <state width="1138" height="498" key="GridCell.Tab.0.bottom" timestamp="1588226154415">
       <screen x="0" y="0" width="1200" height="1920" />
     </state>
-    <state width="1138" height="509" key="GridCell.Tab.0.bottom/-1440.1020.1440.900/0.0.1200.1920@0.0.1200.1920" timestamp="1588132595404" />
-    <state width="1378" height="436" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1587812088790" />
+    <state width="1138" height="498" key="GridCell.Tab.0.bottom/-1440.1020.1440.900/0.0.1200.1920@0.0.1200.1920" timestamp="1588226154415" />
+    <state width="1138" height="684" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1588163850503" />
     <state width="1378" height="367" key="GridCell.Tab.0.bottom/0.23.1440.824@0.23.1440.824" timestamp="1587957715469" />
-    <state width="1138" height="509" key="GridCell.Tab.0.center" timestamp="1588132595403">
+    <state width="1138" height="498" key="GridCell.Tab.0.center" timestamp="1588226154413">
       <screen x="0" y="0" width="1200" height="1920" />
     </state>
-    <state width="1138" height="509" key="GridCell.Tab.0.center/-1440.1020.1440.900/0.0.1200.1920@0.0.1200.1920" timestamp="1588132595403" />
-    <state width="1378" height="436" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1587812088789" />
+    <state width="1138" height="498" key="GridCell.Tab.0.center/-1440.1020.1440.900/0.0.1200.1920@0.0.1200.1920" timestamp="1588226154413" />
+    <state width="1138" height="684" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1588163850500" />
     <state width="1378" height="367" key="GridCell.Tab.0.center/0.23.1440.824@0.23.1440.824" timestamp="1587957715468" />
-    <state width="1138" height="509" key="GridCell.Tab.0.left" timestamp="1588132595402">
+    <state width="1138" height="498" key="GridCell.Tab.0.left" timestamp="1588226154412">
       <screen x="0" y="0" width="1200" height="1920" />
     </state>
-    <state width="1138" height="509" key="GridCell.Tab.0.left/-1440.1020.1440.900/0.0.1200.1920@0.0.1200.1920" timestamp="1588132595402" />
-    <state width="1378" height="436" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1587812088788" />
+    <state width="1138" height="498" key="GridCell.Tab.0.left/-1440.1020.1440.900/0.0.1200.1920@0.0.1200.1920" timestamp="1588226154412" />
+    <state width="1138" height="684" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1588163850499" />
     <state width="1378" height="367" key="GridCell.Tab.0.left/0.23.1440.824@0.23.1440.824" timestamp="1587957715468" />
-    <state width="1138" height="509" key="GridCell.Tab.0.right" timestamp="1588132595404">
+    <state width="1138" height="498" key="GridCell.Tab.0.right" timestamp="1588226154414">
       <screen x="0" y="0" width="1200" height="1920" />
     </state>
-    <state width="1138" height="509" key="GridCell.Tab.0.right/-1440.1020.1440.900/0.0.1200.1920@0.0.1200.1920" timestamp="1588132595404" />
-    <state width="1378" height="436" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1587812088789" />
+    <state width="1138" height="498" key="GridCell.Tab.0.right/-1440.1020.1440.900/0.0.1200.1920@0.0.1200.1920" timestamp="1588226154414" />
+    <state width="1138" height="684" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1588163850501" />
     <state width="1378" height="367" key="GridCell.Tab.0.right/0.23.1440.824@0.23.1440.824" timestamp="1587957715469" />
-    <state width="1138" height="684" key="GridCell.Tab.1.bottom" timestamp="1588130032609">
-      <screen x="0" y="0" width="1200" height="1920" />
+    <state width="1138" height="684" key="GridCell.Tab.1.bottom" timestamp="1588163850507">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1138" height="684" key="GridCell.Tab.1.bottom/-1440.1020.1440.900/0.0.1200.1920@0.0.1200.1920" timestamp="1588130032609" />
-    <state width="1138" height="684" key="GridCell.Tab.1.center" timestamp="1588130032608">
-      <screen x="0" y="0" width="1200" height="1920" />
+    <state width="1138" height="684" key="GridCell.Tab.1.bottom/-1440.1020.1440.900/0.0.1200.1920@0.0.1200.1920" timestamp="1588159812522" />
+    <state width="1138" height="684" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1588163850507" />
+    <state width="1138" height="684" key="GridCell.Tab.1.center" timestamp="1588163850505">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1138" height="684" key="GridCell.Tab.1.center/-1440.1020.1440.900/0.0.1200.1920@0.0.1200.1920" timestamp="1588130032608" />
-    <state width="1138" height="684" key="GridCell.Tab.1.left" timestamp="1588130032607">
-      <screen x="0" y="0" width="1200" height="1920" />
+    <state width="1138" height="684" key="GridCell.Tab.1.center/-1440.1020.1440.900/0.0.1200.1920@0.0.1200.1920" timestamp="1588159812519" />
+    <state width="1138" height="684" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1588163850505" />
+    <state width="1138" height="684" key="GridCell.Tab.1.left" timestamp="1588163850504">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1138" height="684" key="GridCell.Tab.1.left/-1440.1020.1440.900/0.0.1200.1920@0.0.1200.1920" timestamp="1588130032607" />
-    <state width="1138" height="684" key="GridCell.Tab.1.right" timestamp="1588130032609">
-      <screen x="0" y="0" width="1200" height="1920" />
+    <state width="1138" height="684" key="GridCell.Tab.1.left/-1440.1020.1440.900/0.0.1200.1920@0.0.1200.1920" timestamp="1588159812518" />
+    <state width="1138" height="684" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1588163850504" />
+    <state width="1138" height="684" key="GridCell.Tab.1.right" timestamp="1588163850506">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1138" height="684" key="GridCell.Tab.1.right/-1440.1020.1440.900/0.0.1200.1920@0.0.1200.1920" timestamp="1588130032609" />
+    <state width="1138" height="684" key="GridCell.Tab.1.right/-1440.1020.1440.900/0.0.1200.1920@0.0.1200.1920" timestamp="1588159812521" />
+    <state width="1138" height="684" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1588163850506" />
     <state x="0" y="0" key="SettingsEditor" timestamp="1588132246812">
       <screen x="0" y="0" width="1200" height="1920" />
     </state>
@@ -421,205 +228,20 @@
     <state x="244" y="198" width="930" height="1524" key="find.popup/-1440.1020.1440.900/0.0.1200.1920@0.0.1200.1920" timestamp="1588093388557" />
     <state x="293" y="93" width="1115" height="714" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1587811574051" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/blockchain/app/mod_blockchain/my_blockchain.py</url>
+          <line>156</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/my_blockchain$Flask__blockchain_app_mod_blockchain_my_blockchain_py_.coverage" NAME="Flask (blockchain/app/mod_blockchain/my_blockchain.py) Coverage Results" MODIFIED="1588129060244" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/my_blockchain$my_blockchain.coverage" NAME="my_blockchain Coverage Results" MODIFIED="1588132525793" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/blockchain/app/mod_blockchain" />
-    <SUITE FILE_PATH="coverage/my_blockchain$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1588131077565" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/blockchain" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://C:/ProgramData/Anaconda3/envs/env_test/Lib/site-packages/flask/_compat.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SECOND">
-          <first_editor relative-caret-position="-270" />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blockchain/app/mod_user/UserController.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-810">
-          <folding>
-            <element signature="e#0#68#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blockchain/app/mod_blockchain/my_blockchain.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3246">
-          <caret line="395" column="3" selection-start-line="395" selection-start-column="3" selection-end-line="395" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blockchain/config.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blockchain/app/mod_goods/GoodsController.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-54">
-          <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blockchain/app/mod_blockchain/BlockController.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#73#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blockchain/app/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blockchain/app/templates/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-31" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blockchain/app/templates/showqrcode.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-31" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blockchain/app/templates/sign_in.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-31" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blockchain/app/templates/signin_custs_goods.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="27" column="66" selection-start-line="27" selection-start-column="66" selection-end-line="27" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blockchain/app/templates/signin_custs_index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="28" column="26" lean-forward="true" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blockchain/app/templates/signin_custs_sails.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="276" column="48" selection-start-line="276" selection-start-column="43" selection-end-line="276" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blockchain/app/templates/signin_custs_system.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="27" column="66" selection-start-line="27" selection-start-column="66" selection-end-line="27" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blockchain/app/templates/signin_sailer_sails.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="26" column="66" selection-start-line="26" selection-start-column="66" selection-end-line="26" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blockchain/app/templates/signin_sailer_system.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="26" column="66" selection-start-line="26" selection-start-column="66" selection-end-line="26" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blockchain/app/templates/signin_sailer_trans.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="26" column="66" selection-start-line="26" selection-start-column="66" selection-end-line="26" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blockchain/app/templates/signin_trans_goods.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="27" column="66" selection-start-line="27" selection-start-column="66" selection-end-line="27" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blockchain/app/templates/signin_trans_index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="27" column="66" selection-start-line="27" selection-start-column="66" selection-end-line="27" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blockchain/app/templates/signin_trans_sails.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="27" column="66" selection-start-line="27" selection-start-column="66" selection-end-line="27" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blockchain/app/templates/signin_trans_system.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="27" column="66" selection-start-line="27" selection-start-column="66" selection-end-line="27" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blockchain/app/templates/signin_trans_trans.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="27" column="66" selection-start-line="27" selection-start-column="66" selection-end-line="27" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blockchain/app/templates/signin_sailer_index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="27" column="73" selection-start-line="27" selection-start-column="68" selection-end-line="27" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blockchain/app/templates/signin_sailer_goods.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="26" column="66" selection-start-line="26" selection-start-column="66" selection-end-line="26" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blockchain/app/templates/signin_custs_trans.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="130" column="48" lean-forward="true" selection-start-line="130" selection-start-column="48" selection-end-line="130" selection-end-column="48" />
-          <folding>
-            <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blockchain/app/templates/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="273" column="50" lean-forward="true" selection-start-line="273" selection-start-column="50" selection-end-line="273" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
+    <SUITE FILE_PATH="coverage/my_blockchain$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1588226154397" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/blockchain" />
   </component>
 </project>
